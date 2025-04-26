@@ -1,6 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Hero from "./components/Hero"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
+import Profile from "./components/Profile"
+import Footer from "./components/Footer"
+import data from "./data"
 import './App.css'
 
 function App() {
@@ -8,26 +12,36 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <section className='toggle-options'>
+        <button>DARK MODE</button>
+        <span> | </span>
+        <span>TÜRKÇE'YE GEÇ</span>
+      </section>
+      <header>
+        <div className='logo'>
+          <img />
+        </div>
+        <nav>
+          <span>Skills</span>
+          <span>Projects</span>
+          <span>Hire me</span>
+        </nav>
+      </header>
+      <section className='hero'>
+        <Hero />
+      </section>
+      <section className='skills'>
+        <Skills />
+      </section>
+      <section className='profile'>
+        <Profile />
+      </section>
+      <section className='projects'>
+        <Projects />
+      </section>
+      <footer className='footer'>
+        <Footer />
+      </footer>
     </>
   )
 }
