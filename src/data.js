@@ -1,3 +1,4 @@
+import profile from "./assets/profile.png";
 const data = {
     en: {
         headerSection: {
@@ -15,7 +16,8 @@ const data = {
         },
         heroSection: {
             name: "Kaan Arslan",
-            title: "Creative thinker <br />Minimalist lover",
+            title1: "Creative thinker",
+            title2: "Minimalist lover",
             intro: "Hi, I’m Kaan. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
             buttons: [
                 {
@@ -34,7 +36,7 @@ const data = {
                     logo: "#",
                 }
             ],
-            profileImage: "#",
+            profileImage: profile,
         },
         skillsSection: {
             title: "Skills",
@@ -189,7 +191,8 @@ const data = {
         },
         heroSection: {
             name: "Kaan Arslan",
-            title: "Yaratıcı düşünür <br />Minimalist sever",
+            title1: "Yaratıcı düşünür",
+            title2: "Minimalist sever",
             intro: "Merhaba, ben Kaan. Ben bir full-stack geliştiriciyim. Harika kullanıcı deneyimiyle, sağlam ve ölçeklenebilir frontend ürünler geliştiribelen bir geliştirici arıyorsanız, gelin el sıkışalım.",
             buttons: [
                 {

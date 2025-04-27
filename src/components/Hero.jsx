@@ -1,16 +1,24 @@
-
+import data from "../data.js"
+import { useContext } from "react"
+import { OptionsContext } from "../context/OptionsContext"
 
 export default function Hero() {
+
+    const {language} = useContext(OptionsContext);
+
     return (
         <main>
             <section className="hero-left">
-                <span className="name">---- Kaan Arslan</span>
-                <h1>Creative thinker<br />Minimalist lover</h1>
-                <p>Hi, I’m Kaan. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>
-                <div className="hero-buttons">
-                    <button>Hire me</button>
-                    <button>Github</button>
-                    <button>Linkedin</button>
+            <div className="flex items-center space-x-4">
+                <div className="w-25 h-[2px] bg-indigo-800"></div>
+                <span className="text-indigo-700 font-medium text-xl">Kaan Arslan</span>
+            </div>
+                <h1 className="text-7xl font-bold mt-8 leading-[72px] w-[596px]">{data[language].heroSection.title1}<br/>{data[language].heroSection.title2}</h1>
+                <p className="text-gray-500 text-lg font-normal w-[553px] mt-8">{data[language].heroSection.intro}</p>
+                <div className="hero-buttons mt-8 flex gap-3">
+                    {data[language].heroSection.buttons.map((button, index) => (
+                        <button key={index} className="w-[131px] h-[52px] text-indigo-800 border border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white">{button.text}</button>
+                    ))}
                 </div>
             </section>
             <section className="hero-right">
