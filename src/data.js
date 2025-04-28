@@ -1,4 +1,8 @@
 import profile from "./assets/profile.png";
+import project1 from "./assets/project1.png";
+import project2 from "./assets/project2.png";
+import project3 from "./assets/project3.png";
+
 const data = {
     en: {
         headerSection: {
@@ -56,13 +60,15 @@ const data = {
             ],
         },
         profileSection: {
+            title: "Profile",
             profile: "Profile",
             birthday: "Birth Date",
             city: "City ​​of Residence",
             education: "Education Status",
             role: "Preferred Role",
             aboutMe: "About Me",
-            aboutMeText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+            aboutMeText1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            aboutMeText2: "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
         },
         projectsSection: {
             title: "Projects",
@@ -70,7 +76,7 @@ const data = {
                 {
                     name: "Workintech",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project1,
                     buttons: [
                         {
                             text: "react",
@@ -99,7 +105,7 @@ const data = {
                 {
                     name: "Random Jokes",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project2,
                     buttons: [
                         {
                             text: "react",
@@ -128,7 +134,7 @@ const data = {
                 {
                     name: "Journey",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project3,
                     buttons: [
                         {
                             text: "react",
@@ -211,7 +217,7 @@ const data = {
                     logo: "#",
                 }
             ],
-            profileImage: "#",
+            profileImage: profile,
         },
         skillsSection: {
             title: "Yetenekler",
@@ -231,13 +237,15 @@ const data = {
             ],
         },
         profileSection: {
+            title: "Profil",
             profile: "Profil",
             birthday: "Doğum Tarihi",
             city: "İkamet Şehri",
             education: "Eğitim Durumu",
             role: "Tercih Ettiği Rol",
             aboutMe: "Hakkımda",
-            aboutMeText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+            aboutMeText1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            aboutMeText2: "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
         },
         projectsSection: {
             title: "Projeler",
@@ -245,7 +253,7 @@ const data = {
                 {
                     name: "Workintech",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project1,
                     buttons: [
                         {
                             text: "react",
@@ -274,7 +282,7 @@ const data = {
                 {
                     name: "Random Jokes",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project2,
                     buttons: [
                         {
                             text: "react",
@@ -303,7 +311,7 @@ const data = {
                 {
                     name: "Journey",
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: "#",
+                    image: project3,
                     buttons: [
                         {
                             text: "react",

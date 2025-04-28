@@ -15,16 +15,16 @@ function App() {
       <section className='header'>
         <Header />
       </section>
-      <section className='hero mt-20'>
+      <section className='hero mt-25'>
         <Hero/>
       </section>
-      <section className='skills mt-20'>
+      <section className='skills mt-15'>
         <Skills/>
       </section>
-      <section className='profile mt-20'>
+      <section className='profile mt-25'>
         <Profile/>
       </section>
-      <section className='projects mt-20'>
+      <section className='projects mt-25'>
         <Projects/>
       </section>
       <footer className='footer mt-20'>

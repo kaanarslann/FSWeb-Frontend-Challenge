@@ -1,19 +1,43 @@
+import data from "../data.js"
+import { useContext } from "react"
+import { OptionsContext } from "../context/OptionsContext"
 
 export default function Profile() {
+
+    const {language} = useContext(OptionsContext);
+
     return (
         <main>
-            <h2>Profile</h2>
-            <section className="profile-left">
-                <h3>Profile</h3>
-                <span>Doğum Tarihi</span>
-                <span>İkamet Şehri</span>
-                <span>Eğitim Durumu</span>
-                <span>Tercih Ettiği Rol</span>
-            </section>
-            <section className="profile-right">
-                <h3>About Me</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
-                    Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! </p>
+            <h2 className="font-semibold text-5xl">{data[language].profileSection.title}</h2>
+            <section className="flex justify-between mt-4">
+                <section className="profile-left flex flex-col w-[40%]">
+                    <h3 className="text-indigo-700 text-3xl font-medium mt-8 mb-8">{data[language].profileSection.profile}</h3>
+                    <div>
+                        <div className="mb-4 flex">
+                            <span className="text-black text-lg font-semibold leading-[200%] w-1/2">{data[language].profileSection.birthday}</span>
+                            <span className="text-black text-lg font-normal leading-[200%]">14.09.1992</span>
+                        </div>
+                        <div className="mb-4 flex">
+                            <span className="text-black text-lg font-semibold leading-[200%] w-1/2">{data[language].profileSection.city}</span>
+                            <span className="text-black text-lg font-normal leading-[200%]">İstanbul</span>
+                        </div>
+                        <div className="mb-4 flex">
+                            <span className="text-black text-lg font-semibold leading-[200%] w-1/2">{data[language].profileSection.education}</span>
+                            <span className="text-black text-lg font-normal leading-[200%]">İstanbul Aydın Ünv.<br/>Makine Müh. Yüksek Lisans, 2020</span>
+                        </div>
+                        <div className="mb-4 flex">
+                            <span className="text-black text-lg font-semibold leading-[200%] w-1/2">{data[language].profileSection.role}</span>
+                            <span className="text-black text-lg font-normal leading-[200%]">Frontend, UI</span>
+                        </div>
+                    </div>
+                </section>
+                <section className="profile-righ w-[60%] pl-25">
+                    <h3 className="text-indigo-700 text-3xl font-medium mt-8 mb-8">{data[language].profileSection.aboutMe}</h3>
+                    <div className="w-[34rem]">
+                        <p className="text-gray-500 text-lg font-normal leading-[150%] mb-10">{data[language].profileSection.aboutMeText1}</p>
+                        <p className="text-gray-500 text-lg font-normal leading-[150%]">{data[language].profileSection.aboutMeText2}</p>
+                    </div>
+                </section>
             </section>
         </main>
     )

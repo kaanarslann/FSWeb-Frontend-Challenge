@@ -1,25 +1,34 @@
 import {Link} from "react-router-dom";
+import data from "../data.js"
+import { useContext } from "react"
+import { OptionsContext } from "../context/OptionsContext"
 
 export default function Projects() {
+
+    const {language} = useContext(OptionsContext);
+
     return (
         <main>
-            <h2>Projects</h2>
+            <h2>{data[language].projectsSection.title}</h2>
             <section className="projects-list">
                 <div className="project-item">
-                    <img />
-                    <h3>Workintech</h3>
-                    <p>
-                    A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.
-                    </p>
-                    <div className="buttons">
-                        <button>react</button>
-                        <button>redux</button>
-                        <button>axios</button>
-                    </div>
-                    <div className="links">
-                        <Link>Github</Link>
-                        <Link>View Site</Link>
-                    </div>
+                    {data[language].projectsSection.projects.map((project, index) => (
+                        <div key={index}>
+                            <img src={project.image}/>
+                            <h3>{project.name}</h3>
+                            <p>{project.description}</p>
+                            <div className="buttons">
+                                {project.buttons.map((button, index) => (
+                                    <button key={index}>{button.text}</button>
+                                ))}
+                            </div>
+                                <div className="links">
+                                {project.links.map((link, index) => (
+                                    <Link key={index}>{link.text}</Link>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
         </main>
