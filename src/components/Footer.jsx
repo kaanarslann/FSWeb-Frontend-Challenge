@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="bg-[#F9F9F9]">
             <h2>Let's work together on your next product.</h2>
             <section className="footer-links">
                 <div className="email">
