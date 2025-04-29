@@ -17,6 +17,9 @@ const data = {
                     text: "Hire me",
                 },
             ],
+            darkMode: "DARK MODE",
+            language1: "TÜRKÇE'YE",
+            language2: "GEÇ",
         },
         heroSection: {
             name: "Kaan Arslan",
@@ -165,20 +168,11 @@ const data = {
         footerSection: {
             title: "Let's work together on your next product.",
             email: "kaanarslan_hp@hotmail.com",
-            socials: [
-                {
-                    text: "Personal Blog",
-                    link: "#",
-                },
-                {
-                    text: "Github",
-                    link: "#",
-                },
-                {
-                    text: "Linkedin",
-                    link: "#",
-                },
-            ],
+            blog: "Personal Blog",
+            github: "Github",
+            githubLink: "#",
+            linkedin: "Linkedin",
+            linkedinLink: "#",
         },
     },
     tr: {
@@ -194,6 +188,9 @@ const data = {
                     text: "İşe al",
                 },
             ],
+            darkMode: "KARANLIK MOD",
+            language1: "SWITCH TO",
+            language2: "ENGLISH",
         },
         heroSection: {
             name: "Kaan Arslan",
@@ -342,20 +339,11 @@ const data = {
         footerSection: {
             title: "Haydi bir sonraki ürününüzde birlikte çalışalım.",
             email: "kaanarslan_hp@hotmail.com",
-            socials: [
-                {
-                    text: "Kişisek Blog",
-                    link: "#",
-                },
-                {
-                    text: "Github",
-                    link: "#",
-                },
-                {
-                    text: "Linkedin",
-                    link: "#",
-                },
-            ],
+            blog: "Kişisel Blog",
+            github: "Github",
+            githubLink: "#",
+            linkedin: "Linkedin",
+            linkedinLink: "#",
         },
     }, 
 }

@@ -7,7 +7,7 @@ export default function Profile() {
     const {language} = useContext(OptionsContext);
 
     return (
-        <main>
+        <main className="px-60">
             <h2 className="font-semibold text-5xl">{data[language].profileSection.title}</h2>
             <section className="flex justify-between mt-4">
                 <section className="profile-left flex flex-col w-[40%]">

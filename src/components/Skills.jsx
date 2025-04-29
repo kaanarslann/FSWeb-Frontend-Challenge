@@ -7,7 +7,7 @@ export default function Skills() {
     const {language} = useContext(OptionsContext);
 
     return (
-        <main>
+        <main className="px-60">
             <h2 className="font-semibold text-5xl">{data[language].skillsSection.title}</h2>
             <section className="skills mt-4">
                 <div className="skill-item flex justify-between">

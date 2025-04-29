@@ -7,7 +7,7 @@ export default function Hero() {
     const {language} = useContext(OptionsContext);
 
     return (
-        <main className="flex justify-between items-center">
+        <main className="flex justify-between items-center px-60">
             <section className="hero-left">
             <div className="flex items-center space-x-4">
                 <div className="w-25 h-[2px] bg-indigo-800"></div>

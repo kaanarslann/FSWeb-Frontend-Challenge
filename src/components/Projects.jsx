@@ -8,7 +8,7 @@ export default function Projects() {
     const {language} = useContext(OptionsContext);
 
     return (
-        <main>
+        <main className="px-60">
             <h2 className="font-semibold text-5xl mb-8">{data[language].projectsSection.title}</h2>
             <section className="projects-list">
                 <div className="project-item flex justify-between">
