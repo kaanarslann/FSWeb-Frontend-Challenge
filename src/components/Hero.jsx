@@ -1,23 +1,25 @@
 import data from "../data.js"
 import { useContext } from "react"
 import { OptionsContext } from "../context/OptionsContext"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export default function Hero() {
 
-    const {language} = useContext(OptionsContext);
+    const {language, darkMode} = useContext(OptionsContext);
 
     return (
-        <main className="flex justify-between items-center px-60">
+        <main className="flex justify-between items-center px-60 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <section className="hero-left">
             <div className="flex items-center space-x-4">
-                <div className="w-25 h-[2px] bg-indigo-800"></div>
-                <span className="text-indigo-700 font-medium text-xl">Kaan Arslan</span>
+                <div className="w-25 h-[2px] bg-indigo-800 dark:bg-[#BAB2E7]"></div>
+                <span className="text-indigo-700 font-medium text-xl dark:text-[#BAB2E7]">Kaan Arslan</span>
             </div>
-                <h1 className="text-7xl font-bold mt-8 leading-none w-[37.25rem]">{data[language].heroSection.title1}<br/>{data[language].heroSection.title2}</h1>
-                <p className="text-gray-500 text-lg font-normal w-[34.5rem] mt-8 leading-7">{data[language].heroSection.intro}</p>
+                <h1 className="text-7xl font-bold mt-8 leading-none w-[37.25rem] text-gray-800 dark:text-[#AEBCCF]">{data[language].heroSection.title1}<br/>{data[language].heroSection.title2}</h1>
+                <p className="text-gray-500 text-lg font-normal w-[34.5rem] mt-8 leading-7 dark:text-white">{data[language].heroSection.intro}</p>
                 <div className="hero-buttons mt-8 flex gap-3">
                     {data[language].heroSection.buttons.map((button, index) => (
-                        <button key={index} className="w-[131px] h-[52px] text-indigo-800 border border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white">{button.text}</button>
+                        <button key={index} className="w-[131px] h-[52px] text-xl text-indigo-800 border dark:text-[#E1E1FF] border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] dark:border-[#E1E1FF] dark:bg-[#383838]"><FontAwesomeIcon icon={button.icon} className="text-2xl"/> {button.text}</button>
                     ))}
                 </div>
             </section>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
@@ -15,19 +14,19 @@ function App() {
       <section className='header'>
         <Header />
       </section>
-      <section className='hero mt-25'>
+      <section className='hero'>
         <Hero/>
       </section>
-      <section className='skills mt-15'>
+      <section className='skills'>
         <Skills/>
       </section>
-      <section className='profile mt-25'>
+      <section className='profile'>
         <Profile/>
       </section>
-      <section className='projects mt-25'>
+      <section className='projects'>
         <Projects/>
       </section>
-      <footer className='footer mt-20'>
+      <footer className='footer'>
         <Footer/>
       </footer>
     </OptionsContextProvider>

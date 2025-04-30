@@ -2,6 +2,7 @@ import profile from "./assets/profile.png";
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
+import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 const data = {
     en: {
@@ -18,6 +19,7 @@ const data = {
                 },
             ],
             darkMode: "DARK MODE",
+            lightMode: "LIGHT MODE",
             language1: "TÜRKÇE'YE",
             language2: "GEÇ",
         },
@@ -30,17 +32,17 @@ const data = {
                 {
                     text: "Hire me",
                     link: "#",
-                    logo: "#",
+                    icon: "",
                 },
                 {
                     text: "Github",
                     link: "#",
-                    logo: "#",
+                    icon: faGithub,
                 },
                 {
                     text: "Linkedin",
                     link: "#",
-                    logo: "#",
+                    icon: faLinkedinIn,
                 }
             ],
             profileImage: profile,
@@ -189,6 +191,7 @@ const data = {
                 },
             ],
             darkMode: "KARANLIK MOD",
+            lightMode: "AYDINLIK MOD",
             language1: "SWITCH TO",
             language2: "ENGLISH",
         },
@@ -201,17 +204,17 @@ const data = {
                 {
                     text: "İşe al",
                     link: "#",
-                    logo: "#",
+                    icon: "",
                 },
                 {
                     text: "Github",
                     link: "#",
-                    logo: "#",
+                    icon: faGithub,
                 },
                 {
                     text: "Linkedin",
                     link: "#",
-                    logo: "#",
+                    icon: faLinkedinIn,
                 }
             ],
             profileImage: profile,
