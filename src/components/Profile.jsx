@@ -7,10 +7,10 @@ export default function Profile() {
     const {language, darkMode} = useContext(OptionsContext);
 
     return (
-        <main className="px-60 pt-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
+        <main className="px-28 pt-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <h2 className="font-semibold text-5xl text-gray-800 dark:text-[#AEBCCF]">{data[language].profileSection.title}</h2>
             <section className="flex justify-between mt-4">
-                <section className="profile-left flex flex-col w-[40%]">
+                <section className="profile-left flex flex-col w-[45%]">
                     <h3 className="text-indigo-700 text-3xl font-medium mt-8 mb-8 dark:text-[#B7AAFF]">{data[language].profileSection.profile}</h3>
                     <div>
                         <div className="mb-4 flex text-black text-lg leading-[200%] dark:text-white">
@@ -31,7 +31,7 @@ export default function Profile() {
                         </div>
                     </div>
                 </section>
-                <section className="profile-righ w-[60%] pl-25">
+                <section className="profile-righ w-[55%] pl-25">
                     <h3 className="text-indigo-700 text-3xl font-medium mt-8 mb-8 dark:text-[#B7AAFF]">{data[language].profileSection.aboutMe}</h3>
                     <div className="w-[34rem]">
                         <p className="text-gray-500 text-lg font-normal leading-[150%] mb-10 dark:text-white">{data[language].profileSection.aboutMeText1}</p>

@@ -7,7 +7,7 @@ export default function Header() {
     const {language, toggleLanguage, toggleDarkMode, darkMode} = useContext(OptionsContext);
 
     return (
-        <header className="pt-20 px-60 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
+        <header className="pt-6 px-28 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <section className='toggle-options flex justify-end mr-7'>
                 <label className="inline-flex items-center cursor-pointer">
                 <input type="checkbox" value="" className="sr-only peer" checked={darkMode} onChange={toggleDarkMode}/>
