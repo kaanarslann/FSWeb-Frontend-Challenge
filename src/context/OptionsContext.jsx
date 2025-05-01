@@ -1,4 +1,6 @@
 import React, {createContext, useState} from "react";
+import axios from "axios";
+import data from "../data.js";
 
 export const OptionsContext = createContext();
 
@@ -7,7 +9,18 @@ export const OptionsContextProvider = ({children}) => {
     const [darkMode, setDarkMode] = useState(false);
 
     const toggleLanguage = () => {
-        setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
+        axios.post("https://reqres.in/api/workintech", data, {
+            headers: {
+                "x-api-key": "reqres-free-v1"
+            }
+        })
+        .then((response) => {
+            console.log(response.data);
+            setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
+        })
+        .catch((error) => {
+            console.log(error);
+        });
     }
 
     const toggleDarkMode = () => {

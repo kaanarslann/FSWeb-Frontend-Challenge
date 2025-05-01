@@ -23,7 +23,7 @@ export default function Header() {
                 </div>
                 <nav className='flex items-center gap-8 text-lg text-gray-500 font-medium dark:hover:text-indigo-800 dark:text-[#6B7280]'>
                 {data[language].headerSection.navButtons.map((button, index) => (
-                    <button key={index} className='hover:border border-indigo-800 rounded-md px-8 py-3 dark:hover:bg-white'>{button.text}</button>
+                    <button key={index} className='hover:border border-indigo-800 rounded-md px-8 py-3 dark:hover:bg-white cursor-pointer'>{button.text}</button>
                 ))}
                 </nav>
             </section>
