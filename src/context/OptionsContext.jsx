@@ -1,12 +1,13 @@
 import React, {createContext, useState} from "react";
 import axios from "axios";
 import data from "../data.js";
+import useLocalStorage from "../hooks/useLocalStorage.jsx";
 
 export const OptionsContext = createContext();
 
 export const OptionsContextProvider = ({children}) => {
-    const [language, setLanguage] = useState("en");
-    const [darkMode, setDarkMode] = useState(false);
+    const [language, setLanguage] = useLocalStorage("language", "en");
+    const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
 
     const toggleLanguage = () => {
         axios.post("https://reqres.in/api/workintech", data, {
