@@ -1,4 +1,5 @@
-import React, {createContext, useState} from "react";
+import React, {createContext} from "react";
+import { toast } from "react-toastify";
 import axios from "axios";
 import data from "../data.js";
 import useLocalStorage from "../hooks/useLocalStorage.jsx";
@@ -17,10 +18,12 @@ export const OptionsContextProvider = ({children}) => {
         })
         .then((response) => {
             console.log(response.data);
+            toast.success("Language changed successfully!");
             setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
         })
         .catch((error) => {
             console.log(error);
+            toast.error("An error has occured!");
         });
     }
 

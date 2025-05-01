@@ -5,6 +5,7 @@ import Skills from "./components/Skills"
 import Profile from "./components/Profile"
 import Footer from "./components/Footer"
 import { OptionsContextProvider } from './context/OptionsContext'
+import { ToastContainer } from "react-toastify";
 import './App.css'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <footer className='footer'>
         <Footer/>
       </footer>
+      <ToastContainer />
     </OptionsContextProvider>
   )
 }
