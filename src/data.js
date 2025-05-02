@@ -37,12 +37,12 @@ const data = {
                 },
                 {
                     text: "Github",
-                    link: "#",
+                    link: "https://github.com/kaanarslann?tab=repositories",
                     icon: faGithub,
                 },
                 {
                     text: "Linkedin",
-                    link: "#",
+                    link: "https://www.linkedin.com/in/kaan-arslan-6a3b60138/",
                     icon: faLinkedinIn,
                 }
             ],
@@ -215,12 +215,12 @@ const data = {
                 },
                 {
                     text: "Github",
-                    link: "#",
+                    link: "https://github.com/kaanarslann?tab=repositories",
                     icon: faGithub,
                 },
                 {
                     text: "Linkedin",
-                    link: "#",
+                    link: "https://www.linkedin.com/in/kaan-arslan-6a3b60138/",
                     icon: faLinkedinIn,
                 }
             ],

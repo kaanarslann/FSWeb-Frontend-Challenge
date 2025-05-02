@@ -18,7 +18,7 @@ export default function Hero() {
                 <p className="text-gray-500 text-lg font-normal w-[34.5rem] mt-8 leading-7 dark:text-white sm:text-center lg:text-start">{apiData[language].heroSection.intro}</p>
                 <div className="hero-buttons mt-8 flex gap-3 sm:justify-center lg:justify-start">
                     {apiData[language].heroSection.buttons.map((button, index) => (
-                        <button key={index} className="w-32 cursor-pointer h-14 text-lg text-indigo-800 border dark:text-[#E1E1FF] border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] dark:border-[#E1E1FF] dark:bg-[#383838]"><FontAwesomeIcon icon={button.icon} className="text-2xl"/> {button.text}</button>
+                        <button key={index} onClick={() => window.open(button.link, "_blank")} className="w-32 cursor-pointer h-14 text-lg text-indigo-800 border dark:text-[#E1E1FF] border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] dark:border-[#E1E1FF] dark:bg-[#383838]"><FontAwesomeIcon icon={button.icon} className="text-2xl"/> {button.text}</button>
                     ))}
                 </div>
             </section>
