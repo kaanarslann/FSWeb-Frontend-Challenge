@@ -34,7 +34,6 @@ export const OptionsContextProvider = ({children}) => {
 
     const toggleLanguage = () => {
         setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
-        fetchData();
         toast.success("Language changed successfully!");
     }
 

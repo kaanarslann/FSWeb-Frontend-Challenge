@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 
 import { useContext } from "react"
 import { OptionsContext } from "../context/OptionsContext"
@@ -24,7 +23,7 @@ export default function Projects() {
                             </div>
                                 <div className="links flex justify-between lg:mb-0 sm:mb-4">
                                 {project.links.map((link, index) => (
-                                    <Link key={index} to={() => window.open(link.link, "_blank")} className="text-indigo-800 text-base leading-4 underline dark:text-[#E1E1FF]">{link.text}</Link>
+                                    <a key={index} href={link.link} target="_blank" rel="noopener noreferrer" className="text-indigo-800 text-base leading-4 underline dark:text-[#E1E1FF]">{link.text}</a>
                                 ))}
                             </div>
                         </div>

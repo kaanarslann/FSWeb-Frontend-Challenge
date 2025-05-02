@@ -1,8 +1,7 @@
-import profile from "./assets/profile.png";
 import project1 from "./assets/project1.png";
-import project2 from "./assets/project2.png";
-import project3 from "./assets/project3.png";
 import pizza from "./assets/pizza.png";
+import witflix from "./assets/witflix.png";
+import profilfoto from "./assets/profilfoto.png";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 const data = {
@@ -47,7 +46,7 @@ const data = {
                     icon: faLinkedinIn,
                 }
             ],
-            profileImage: profile,
+            profileImage: profilfoto,
         },
         skillsSection: {
             title: "Skills",
@@ -75,7 +74,7 @@ const data = {
             city2: "İstanbul",
             education1: "Education Status",
             education2: "İstanbul Aydın Uni.",
-            education3: "Mechanical Eng. Master's Degree, 2020",
+            education3: "Mech Eng. Master's Degree, 2020",
             role1: "Preferred Role",
             role2: "Frontend, UI",
             aboutMe: "About Me",
@@ -116,7 +115,7 @@ const data = {
                 },
                 {
                     name: "Technological Foods",
-                    description: "A Single Page Application project. This React project was created using Vite. It uses React Router to navigate between components, Axios to post FormData to a mock api service and Cypress to test several success and error scenarios.",
+                    description: "A Single Page Application project. This React project was created using Vite. It uses React Router to navigate between components, Axios to post FormData to a mock api service, prop lifting to transfer order data and Cypress to test several success and error scenarios.",
                     image: pizza,
                     buttons: [
                         {
@@ -144,9 +143,9 @@ const data = {
                     ],
                 },
                 {
-                    name: "Journey",
-                    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: project3,
+                    name: "WitFlix",
+                    description: "A simple, static web page. This was one of my first frontend projects. It uses fundamental HTML elements, a scroll feature to horizontally scroll movie items, Fontawesome icons to create features like star ratings and CSS to create the skeleton of a Netflix-like page.",
+                    image: witflix,
                     buttons: [
                         {
                             text: "react",
@@ -164,11 +163,11 @@ const data = {
                     links: [
                         {
                             text: "Github",
-                            link: "#",
+                            link: "https://github.com/kaanarslann/WitFlix",
                         },
                         {
                             text: "View Site",
-                            link: "#",
+                            link: "https://wit-flix-liard.vercel.app/",
                         },
                     ],
                 },
@@ -225,7 +224,7 @@ const data = {
                     icon: faLinkedinIn,
                 }
             ],
-            profileImage: profile,
+            profileImage: profilfoto,
         },
         skillsSection: {
             title: "Yetenekler",
@@ -322,9 +321,9 @@ const data = {
                     ],
                 },
                 {
-                    name: "Journey",
-                    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: project3,
+                    name: "WitFlix",
+                    description: "Basit, statik bir web sayfasıdır. İlk frontend projelerimden biriydi. Temel HTML öğelerini, film kutularını yatay kaydırmak için bir kaydırma özelliğini, yıldız derecelendirmeleri gibi özellikler oluşturmak için Fontawesome simgelerini ve Netflix benzeri bir sayfanın iskeletini oluşturmak için CSS kullanır.",
+                    image: witflix,
                     buttons: [
                         {
                             text: "react",
@@ -342,11 +341,11 @@ const data = {
                     links: [
                         {
                             text: "Github",
-                            link: "#",
+                            link: "https://github.com/kaanarslann/WitFlix",
                         },
                         {
                             text: "Websiteye Git",
-                            link: "#",
+                            link: "https://wit-flix-liard.vercel.app/",
                         },
                     ],
                 },
