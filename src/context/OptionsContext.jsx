@@ -20,6 +20,7 @@ export const OptionsContextProvider = ({children}) => {
         })
         .then((response) => {
             setApiData(response.data);
+            toast.success("Data fetched successfully!");
         })
         .catch((error) => {
             console.error(error);
@@ -29,7 +30,6 @@ export const OptionsContextProvider = ({children}) => {
 
     useEffect(() => {
         fetchData();
-        toast.success("Data fetched successfully!");
     }, [])
 
     const toggleLanguage = () => {
