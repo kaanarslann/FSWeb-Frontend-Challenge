@@ -2,6 +2,7 @@ import profile from "./assets/profile.png";
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
+import pizza from "./assets/pizza.png";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 const data = {
@@ -114,9 +115,9 @@ const data = {
                     ],
                 },
                 {
-                    name: "Random Jokes",
-                    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: project2,
+                    name: "Technological Foods",
+                    description: "A Single Page Application project. This React project was created using Vite. It uses React Router to navigate between components, Axios to post FormData to a mock api service and Cypress to test several success and error scenarios.",
+                    image: pizza,
                     buttons: [
                         {
                             text: "react",
@@ -134,11 +135,11 @@ const data = {
                     links: [
                         {
                             text: "Github",
-                            link: "#",
+                            link: "https://github.com/kaanarslann/fsweb-s8-challenge-pizza",
                         },
                         {
                             text: "View Site",
-                            link: "#",
+                            link: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/",
                         },
                     ],
                 },
@@ -292,9 +293,9 @@ const data = {
                     ],
                 },
                 {
-                    name: "Random Jokes",
-                    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    image: project2,
+                    name: "Teknolojik Yemekler",
+                    description: "Bir tek sayfa uygulama projesidir. Bu React projesi Vite kullanılarak oluşturulmuştur. Bileşenler arasında gezinmek için React Router'ı, FormData'yı bir sahte api hizmetine göndermek için Axios'u ve birkaç başarı ve hata senaryosunu test etmek için Cypress'i kullanır.",
+                    image: pizza,
                     buttons: [
                         {
                             text: "react",
@@ -312,11 +313,11 @@ const data = {
                     links: [
                         {
                             text: "Github",
-                            link: "#",
+                            link: "https://github.com/kaanarslann/fsweb-s8-challenge-pizza",
                         },
                         {
-                            text: "Websiteye Git",
-                            link: "#",
+                            text: "View Site",
+                            link: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/",
                         },
                     ],
                 },

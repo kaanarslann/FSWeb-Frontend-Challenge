@@ -24,7 +24,7 @@ export default function Projects() {
                             </div>
                                 <div className="links flex justify-between lg:mb-0 sm:mb-4">
                                 {project.links.map((link, index) => (
-                                    <Link key={index} className="text-indigo-800 text-base leading-4 underline dark:text-[#E1E1FF]">{link.text}</Link>
+                                    <Link key={index} to={() => window.open(link.link, "_blank")} className="text-indigo-800 text-base leading-4 underline dark:text-[#E1E1FF]">{link.text}</Link>
                                 ))}
                             </div>
                         </div>
