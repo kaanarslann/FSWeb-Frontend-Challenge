@@ -1,4 +1,4 @@
-import React, {createContext} from "react";
+import React, {createContext, useEffect, useState} from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import data from "../data.js";
@@ -10,29 +10,44 @@ export const OptionsContextProvider = ({children}) => {
     const [language, setLanguage] = useLocalStorage("language", "en");
     const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
 
-    const toggleLanguage = () => {
+    const [apiData, setApiData] = useState({});
+
+    const fetchData = () => {
         axios.post("https://reqres.in/api/workintech", data, {
             headers: {
                 "x-api-key": "reqres-free-v1"
             }
         })
         .then((response) => {
-            console.log(response.data);
-            toast.success("Language changed successfully!");
-            setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
+            setApiData(response.data);
         })
         .catch((error) => {
-            console.log(error);
+            console.error(error);
             toast.error("An error has occured!");
         });
+    }
+
+    useEffect(() => {
+        fetchData();
+        toast.success("Data fetched successfully!");
+    }, [])
+
+    const toggleLanguage = () => {
+        setLanguage((prevLanguage) => (prevLanguage === "en" ? "tr" : "en"));
+        fetchData();
+        toast.success("Language changed successfully!");
     }
 
     const toggleDarkMode = () => {
         setDarkMode((prevMode) => !prevMode);
     }
+
+    if (!apiData || !apiData[language]) {
+        return <div>Yükleniyor...</div>;
+      }
     
     return (
-        <OptionsContext.Provider value={{language,darkMode,toggleLanguage,toggleDarkMode}}>
+        <OptionsContext.Provider value={{language,darkMode,toggleLanguage,toggleDarkMode, apiData}}>
             {children}
         </OptionsContext.Provider>
     );

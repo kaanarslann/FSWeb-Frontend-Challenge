@@ -1,18 +1,18 @@
 import {Link} from "react-router-dom";
-import data from "../data.js"
+
 import { useContext } from "react"
 import { OptionsContext } from "../context/OptionsContext"
 
 export default function Projects() {
 
-    const {language, darkMode} = useContext(OptionsContext);
+    const {language, darkMode, apiData} = useContext(OptionsContext);
 
     return (
         <section className="px-28 py-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
-            <h2 className="font-semibold text-5xl mb-8 text-gray-800 dark:text-[#AEBCCF] sm:text-center lg:text-start">{data[language].projectsSection.title}</h2>
+            <h2 className="font-semibold text-5xl mb-8 text-gray-800 dark:text-[#AEBCCF] sm:text-center lg:text-start">{apiData[language].projectsSection.title}</h2>
             <section className="projects-list">
                 <div className="project-item flex lg:justify-between sm:items-center lg:flex-row sm:flex-col">
-                    {data[language].projectsSection.projects.map((project, index) => (
+                    {apiData[language].projectsSection.projects.map((project, index) => (
                         <div key={index} className="w-72 sm:text-center lg:text-start">
                             <img className="mb-4" src={project.image}/>
                             <h3 className="text-indigo-700 text-3xl font-medium mb-4 dark:text-[#CFCBFF]">{project.name}</h3>
