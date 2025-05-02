@@ -7,7 +7,7 @@ export default function Projects() {
     const {language, darkMode, apiData} = useContext(OptionsContext);
 
     return (
-        <section className="px-28 py-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
+        <section id="projects" className="px-28 py-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <h2 className="font-semibold text-5xl mb-8 text-gray-800 dark:text-[#AEBCCF] sm:text-center lg:text-start">{apiData[language].projectsSection.title}</h2>
             <section className="projects-list">
                 <div className="project-item flex lg:justify-between sm:items-center lg:flex-row sm:flex-col">

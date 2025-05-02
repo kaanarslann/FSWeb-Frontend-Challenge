@@ -18,8 +18,8 @@ export default function Footer() {
                 </div>
                 <div className="socials flex gap-4 lg:justify-between sm:justify-center lg:pt-0 sm:pt-4">
                     <Link className="text-[#0A0A14] text-lg leading-[150%] font-medium dark:text-[#E1E1FF]">{apiData[language].footerSection.blog}</Link>
-                    <Link className="text-[#00AB6B] text-lg leading-[150%] font-medium dark:text-[#17D18B]">{apiData[language].footerSection.github}</Link>
-                    <Link className="text-[#0077B5] text-lg leading-[150%] font-medium dark:text-[#0BA6F6]">{apiData[language].footerSection.linkedin}</Link>
+                    <a href={apiData[language].footerSection.githubLink} target="_blank" rel="noopener noreferrer" className="text-[#00AB6B] text-lg leading-[150%] font-medium dark:text-[#17D18B]">{apiData[language].footerSection.github}</a>
+                    <a href={apiData[language].footerSection.linkedinLink} target="_blank" rel="noopener noreferrer" className="text-[#0077B5] text-lg leading-[150%] font-medium dark:text-[#0BA6F6]">{apiData[language].footerSection.linkedin}</a>
                 </div>
             </section>
         </footer>

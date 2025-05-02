@@ -7,7 +7,7 @@ export default function Skills() {
     const {language, darkMode, apiData} = useContext(OptionsContext);
 
     return (
-        <section className="px-28 pt-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
+        <section id="skills" className="px-28 pt-25 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <h2 className="font-semibold text-5xl text-gray-800 dark:text-[#AEBCCF] sm:text-center lg:text-start">{apiData[language].skillsSection.title}</h2>
             <section className="skills mt-4">
                 <div className="skill-item flex lg:justify-between sm:justify-center lg:flex-row sm:flex-col sm:text-center lg:text-start">

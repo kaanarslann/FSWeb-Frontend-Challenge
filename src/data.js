@@ -10,9 +10,11 @@ const data = {
             navButtons: [
                 {
                     text: "Skills",
+                    link: "#skills",
                 },
                 {
                     text: "Projects",
+                    link: "#projects",
                 },
                 {
                     text: "Hire me",
@@ -178,9 +180,9 @@ const data = {
             email: "kaanarslan_hp@hotmail.com",
             blog: "Personal Blog",
             github: "Github",
-            githubLink: "#",
+            githubLink: "https://github.com/kaanarslann?tab=repositories",
             linkedin: "Linkedin",
-            linkedinLink: "#",
+            linkedinLink: "https://www.linkedin.com/in/kaan-arslan-6a3b60138/",
         },
     },
     tr: {
@@ -356,9 +358,9 @@ const data = {
             email: "kaanarslan_hp@hotmail.com",
             blog: "Kişisel Blog",
             github: "Github",
-            githubLink: "#",
+            githubLink: "https://github.com/kaanarslann?tab=repositories",
             linkedin: "Linkedin",
-            linkedinLink: "#",
+            linkedinLink: "https://www.linkedin.com/in/kaan-arslan-6a3b60138/",
         },
     }, 
 }

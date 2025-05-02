@@ -22,7 +22,7 @@ export default function Header() {
                 </div>
                 <nav className='flex items-center lg:gap-8 sm:gap-4 lg:text-lg sm:text-base text-gray-500 font-medium dark:hover:text-indigo-800 dark:text-[#6B7280]'>
                 {apiData[language].headerSection.navButtons.map((button, index) => (
-                    <button key={index} className='hover:border border-indigo-800 rounded-md px-8 py-3 dark:hover:bg-white cursor-pointer'>{button.text}</button>
+                    <a key={index} href={button.link} className='hover:border border-indigo-800 rounded-md px-8 py-3 dark:hover:bg-white cursor-pointer'>{button.text}</a>
                 ))}
                 </nav>
             </section>

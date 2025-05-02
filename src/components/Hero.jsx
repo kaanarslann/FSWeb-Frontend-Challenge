@@ -8,9 +8,9 @@ export default function Hero() {
     const {language, darkMode, apiData} = useContext(OptionsContext);
 
     return (
-        <main className="flex lg:justify-between lg:flex-row sm:flex-col items-center px-28 pt-20 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
+        <main className="flex lg:justify-between lg:flex-row sm:flex-col lg:gap-0 sm:gap-4 items-center px-28 pt-20 dark:bg-[#252128]" data-theme={darkMode ? "dark" : "light"}>
             <section className="hero-left">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 sm:justify-center lg:justify-normal">
                 <div className="w-25 h-0.5 bg-indigo-800 dark:bg-[#BAB2E7]"></div>
                 <span className="text-indigo-700 font-medium text-xl dark:text-[#BAB2E7]">{apiData[language].heroSection.name}</span>
             </div>
